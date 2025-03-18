@@ -28,7 +28,7 @@ const roadmapData = [
   }
 ];
 
-const Roadmap = () => {
+export default function Roadmap() {
   const [completedSteps, setCompletedSteps] = useState({});
 
   const toggleStep = (category, step) => {
@@ -67,6 +67,4 @@ const Roadmap = () => {
       ))}
     </div>
   );
-};
-
-export default Roadmap;
+}
