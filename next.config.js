@@ -2,7 +2,10 @@
 const nextConfig = {
     output: "export",
     basePath: "/ai-product-roadmap",
-    assetPrefix: "/ai-product-roadmap/"
+    assetPrefix: "/ai-product-roadmap/",
+    images: {
+      unoptimized: true
+    }
   };
   
   module.exports = nextConfig;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const roadmapData = [
   {
@@ -20,24 +20,6 @@ const roadmapData = [
       { title: "Vector Databases & AI-powered Search", source: "https://docs.pinecone.io/" },
       { title: "RAG (Retrieval-Augmented Generation)", source: "https://python.langchain.com/docs/use_cases/question_answering/" }
     ],
-  },
-  {
-    phase: "AI Engineering",
-    goals: "Gain hands-on experience in AI model deployment",
-    topics: [
-      { title: "Self-hosted AI vs. Cloud AI", source: "https://aws.amazon.com/machine-learning/" },
-      { title: "Optimizing AI for Performance", source: "https://developer.nvidia.com/machine-learning" },
-      { title: "Fine-tuning vs. RAG", source: "https://python.langchain.com/docs/use_cases/question_answering/" }
-    ],
-  },
-  {
-    phase: "AI in Gaming & Storytelling",
-    goals: "Use AI to create interactive storytelling & AI-driven characters",
-    topics: [
-      { title: "Procedural Storytelling with AI", source: "https://hiddendoor.co/" },
-      { title: "Dynamic NPC AI", source: "https://inworld.ai/" },
-      { title: "AI-powered quest generation", source: "https://www.mdpi.com/2076-3417/12/12/6118" }
-    ],
   }
 ];
 
@@ -47,18 +29,18 @@ const Roadmap = () => {
   return (
     <div className="space-y-6">
       {roadmapData.map((section, idx) => (
-        <div key={idx} className="bg-gray-800 p-4 rounded-lg">
+        <div key={idx} className="bg-gray-200 p-4 rounded-lg shadow-lg">
           <div 
-            className="flex justify-between items-center cursor-pointer"
+            className="flex justify-between items-center cursor-pointer font-bold text-lg"
             onClick={() => setExpanded(expanded === idx ? null : idx)}
           >
-            <h2 className="text-xl font-semibold">{section.phase}</h2>
+            {section.phase}
             <span>{expanded === idx ? "🔽" : "▶️"}</span>
           </div>
           {expanded === idx && (
             <ul className="mt-2 space-y-2">
               {section.topics.map((topic, id) => (
-                <li key={id} className="text-sm text-blue-300">
+                <li key={id} className="text-blue-600 hover:underline">
                   <a href={topic.source} target="_blank" rel="noopener noreferrer">{topic.title}</a>
                 </li>
               ))}
