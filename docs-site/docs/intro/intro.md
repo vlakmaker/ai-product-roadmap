@@ -2,6 +2,7 @@
 id: intro
 title: Welcome to AI Learning Hub
 sidebar_label: Introduction
+slug: /
 ---
 
 # AI Learning Hub 🚀
@@ -14,6 +15,5 @@ Welcome to the **AI Learning Hub**! This is an open-source knowledge base for AI
 - AI for **storytelling & gaming**.
 
 ## 🚀 Getting Started
-- Explore the [Docs](/docs/intro)
-- Check out the [Blog](/blog)
+- Explore the [Docs](/)
 - Contribute on [GitHub](https://github.com/vlakmaker/ai-product-storytelling-engineer-roadmap)

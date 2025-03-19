@@ -1,3 +1,8 @@
+# 📌 AI Engineering
+
+## 🎯 Goal:
+Gain hands-on experience in deploying, fine-tuning, and integrating AI models into applications.
+
 ### **1️⃣ AI Development Basics**
 
 - [ ] **Running AI models locally** (Mistral, Ollama) - [Ollama Docs](https://ollama.ai/)
